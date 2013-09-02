@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
 
-cat <<EOF
----
-default_process_types:
-  web: python boot.py /
-EOF
+$1/spring-0.5.0.M1/bin/spring run app.groovy
 
