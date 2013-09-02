@@ -51,16 +51,5 @@ perl -v
 
 cd ../
 echo "Creating script to start a small Python Web server"
-cat > "$BUILD_DIR/app.groovy" <<EOF
-@Controller
-class ThisWillActuallyRun {
 
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        return "Hello World!"
-    }
-
-}
-EOF
 
