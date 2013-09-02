@@ -9,7 +9,7 @@
 cat <<EOF
 ---
 default_process_types:
-  web: $1/spring-0.5.0.M1/bin/spring --version
+  web: $1/spring-0.5.0.M1/bin/spring app.groovy
 EOF
 
 
