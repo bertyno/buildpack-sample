@@ -50,6 +50,6 @@ ruby -v
 perl -v
 
 cd ../
-echo "Creating script to start a small Python Web server"
+echo "Creating script to start a small Python Web server " $BUILD_DIR
 ls -l $BUILD_DIR/spring-0.5.0.M1/bin/
 
