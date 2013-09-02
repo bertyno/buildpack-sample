@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #BUILD_DIR=$1
-echo "Lanzando la aplicación con boot en " $BUILD_DIR
+#echo "Lanzando la aplicación con boot en " $BUILD_DIR
 #ls $BUILD_DIR/spring-0.5.0.M1/bin/
 #$BUILD_DIR/spring-0.5.0.M1/bin/spring --version
 #run app.groovy
@@ -9,7 +9,7 @@ echo "Lanzando la aplicación con boot en " $BUILD_DIR
 cat <<EOF
 ---
 default_process_types:
-  web: python boot.py /
+  web: $1/spring-0.5.0.M1/bin/spring --version
 EOF
 
 
