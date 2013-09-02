@@ -8,6 +8,9 @@ BUILD_PACK_DIR=$(dirname $(dirname $0))
 
 ls $BUILD_DIR
 
+echo "JAVA_HOME " $JAVA_HOME
+echo "Version Java " java -version
+
 if [ ! -d "$BUILD_DIR" ]; then
   echo "Build directory [$BUILD_DIR] does not exist, creating"
   mkdir -p "$BUILD_DIR"
