@@ -58,10 +58,19 @@ curl -O http://apache.mirrors.timporter.net/maven/maven-3/3.1.0/binaries/apache-
 
 tar -zxvf apache-maven-3.1.0-bin.tar.gz
 
-tar -zxvf $BUILDPACK_CACHE/openjdk-1.6.0_27.tar.gz
+mkdir java
+
+tar -zxvf $BUILDPACK_CACHE/openjdk-1.6.0_27.tar.gz -C java
 
 echo "Version Java " 
-bin/java -version
+java/bin/java -version
+
+echo "Current directory " $0
+
+export JAVA_HOME=$0/java
+
+echo "Maven Version"
+apache-maven-3.1.0/bin/mvn -version
 
 cd ../
 echo "Creating script to start a small Grails Web server " $BUILD_DIR
