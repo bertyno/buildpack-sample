@@ -74,10 +74,12 @@ export JAVA_HOME=$BUILD_DIR/java
 
 export PATH="$PATH:$JAVA_HOME/bin"
 
+export PATH="$PATH:/tmp/staged/app/apache-maven-3.1.0/bin"
+
 echo "Java version with JAVA_HOME added to PATH"
 java -version
 
 echo "Maven Version"
 apache-maven-3.1.0/bin/mvn -version
 
-apache-maven-3.1.0/bin/mvn install
+#apache-maven-3.1.0/bin/mvn install
