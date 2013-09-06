@@ -72,6 +72,8 @@ pwd
 
 export JAVA_HOME=$BUILD_DIR/java
 
+export PATH="$PATH:$JAVAHOME/bin"
+
 echo "Maven Version"
 apache-maven-3.1.0/bin/mvn -version
 
