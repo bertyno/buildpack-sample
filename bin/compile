@@ -67,6 +67,9 @@ java/bin/java -version
 
 echo "Current directory " $0
 
+echo "Current directory pwd"
+pwd
+
 export JAVA_HOME=$0/java
 
 echo "Maven Version"
