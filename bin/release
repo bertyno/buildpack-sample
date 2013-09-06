@@ -9,7 +9,7 @@
 cat <<EOF
 ---
 default_process_types:
-  web: sh script
+  web: sh script.sh
 EOF
 
 
