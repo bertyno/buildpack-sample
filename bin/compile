@@ -54,7 +54,11 @@ ruby -v
 perl -v
 
 cd $BUILD_DIR
-curl -O http://apache.mirrors.timporter.net/maven/maven-3/3.1.0/binaries/apache-maven-3.1.0-bin.tar.gz
+#curl -O http://apache.mirrors.timporter.net/maven/maven-3/3.1.0/binaries/apache-maven-3.1.0-bin.tar.gz
+
+tar -zxvf apache-maven-3.1.0-bin.tar.gz
+
+apache-maven-3.1.0-bin.tar.gz $BUILDPACK_CACHE/openjdk-1.6.0_27.tar.gz
 
 echo "Version Java " 
 java -version
