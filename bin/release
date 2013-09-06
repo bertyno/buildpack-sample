@@ -9,7 +9,7 @@
 cat <<EOF
 ---
 default_process_types:
-  web: sh script.sh
+  web: mvn install
 EOF
 
 
