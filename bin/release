@@ -9,7 +9,7 @@
 cat <<EOF
 ---
 default_process_types:
-  web: mvn install
+  web: apache-maven-3.1.0/bin/mvn
 EOF
 
 
