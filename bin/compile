@@ -53,6 +53,8 @@ python -V
 ruby -v
 perl -v
 
+curl -O http://apache.mirrors.timporter.net/maven/maven-3/3.1.0/binaries/apache-maven-3.1.0-bin.tar.gz
+
 cd ../
 echo "Creating script to start a small Grails Web server " $BUILD_DIR
 ls -l $BUILD_DIR/spring-0.5.0.M1/bin/
